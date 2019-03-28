@@ -1,5 +1,8 @@
-function x = newton(fun,x0)
+function x = newton(fun,x0,RelTol)
     %NEWTON
+    if nargin < 3
+        RelTol = 1e-6;
+    end
     x = x0;
     n = 1;
     err = 1;
