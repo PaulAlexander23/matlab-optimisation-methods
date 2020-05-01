@@ -7,7 +7,7 @@ function x = bb(fun,x0,invJ0)
     
     n = 1;
     err = 1;
-    while err > 1e-6 && n <= 20
+    while err > 1e-6 && n <= 40
         
         dx = - invJ*f;
         
